@@ -1,1 +1,3 @@
-# catch_balls
+# color_together
+
+$ node app.js
