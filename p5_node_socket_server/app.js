@@ -1483,5 +1483,5 @@ function isMultipleBallFlying() {
 
 }
 
-console.log("<CATCH BALL - CATCH BOMB> server is running..");
+console.log("<Color together!!> server is running..");
 
