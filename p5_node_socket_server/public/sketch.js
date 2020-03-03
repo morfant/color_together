@@ -152,6 +152,24 @@ function mouseClicked() {
 
     console.log("Tone transport toggle");
 
+
+    synths[0] = new Tone.Synth();
+    synths[1] = new Tone.AMSynth();
+    synths[2] = new Tone.MembraneSynth();
+    synths[3] = new Tone.FMSynth();
+    synths[4] = new Tone.PluckSynth();
+    vols[0] = new Tone.Volume(-12);
+    vols[1] = new Tone.Volume(-12);
+    vols[2] = new Tone.Volume(-26);
+    vols[3] = new Tone.Volume(-20);
+    vols[4] = new Tone.Volume(-12);
+    synths[0].chain(vols[0], Tone.Master);
+    synths[1].chain(vols[1], Tone.Master);
+    synths[2].chain(vols[2], Tone.Master);
+    synths[3].chain(vols[3], Tone.Master);
+    synths[4].chain(vols[4], Tone.Master);
+
+ 
     Tone.Transport.toggle();
 
     loops[0].start(0)
